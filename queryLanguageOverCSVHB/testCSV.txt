@@ -1,0 +1,3 @@
+id, name, course
+1, Rado, Haskell
+2, Ivo, Python
