@@ -17,7 +17,9 @@ class ViewController: UIViewController {
         let fileContent = NSString(contentsOfFile: location, encoding: NSUTF8StringEncoding, error: nil) as String
         
         println(fileContent)
-        // Dispose of any resources that can be recreated.
+        // looks more like a table...
+        let fileContent = (NSString(contentsOfFile: location, encoding: NSUTF8StringEncoding, error: nil) as String).stringByReplacingOccurrencesOfString(",", withString: "|") 
+       println(fileContent)
     }
 
 }
